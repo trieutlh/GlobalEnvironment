@@ -1,18 +1,14 @@
-<div id="observablehq-viewof-emission-cf9cc982"></div>
-<div id="observablehq-chart-cf9cc982"></div>
-<div id="observablehq-xAxis-cf9cc982"></div>
-<div id="observablehq-yAxis-cf9cc982"></div>
-<p>Credit: <a href="https://observablehq.com/d/3e53224b954485a4">The Wealth &amp; Health of Nations by BA</a></p>
- 
+<div id="observablehq-viewof-emission-9ffd2006"></div>
+<div id="observablehq-chart-9ffd2006"></div>
+<p>Credit: <a href="https://observablehq.com/d/10f10af9be0ee3a9">Global Environment by UWTDataviz</a></p>
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/d/3e53224b954485a4.js?v=4&api_key=54638bb1791ab06d0420a566ab7331640cd018f6";
+import define from "https://api.observablehq.com/d/10f10af9be0ee3a9.js?v=4";
 new Runtime().module(define, name => {
-  if (name === "viewof emission") return new Inspector(document.querySelector("#observablehq-viewof-emission-cf9cc982"));
-  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-cf9cc982"));
-  if (name === "xAxis") return new Inspector(document.querySelector("#observablehq-xAxis-cf9cc982"));
-  if (name === "yAxis") return new Inspector(document.querySelector("#observablehq-yAxis-cf9cc982"));
-  return ["currentData","maxWidth","update","maxHeight","x","y","grid"].includes(name);
+  if (name === "viewof emission") return new Inspector(document.querySelector("#observablehq-viewof-emission-9ffd2006"));
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-9ffd2006"));
+  return ["currentData","maxWidth","update","maxHeight","x","y","xAxis","grid","yAxis"].includes(name);
 });
 </script>
